@@ -75,7 +75,7 @@ void test(float x = 4.1, int n = 2)
     cout << "n= " << n << "      x=" << x << "\n";
 }
 
-void main()
+int main()
 {
     int i = 5; float r = 3.2;
     test(i, r);    // fonction N°1
@@ -86,12 +86,13 @@ void main()
     // les appels suivants, ambiguës, sont rejetés par le
     // compilateur
     // test();
-    // test (i, i);
+    //test (i, i);
     // test (r, r);
     // les initialisations par défaut de x à la valeur 4.1
     // et de n à 0 sont inutilisables
 
     getch() ;
+    return 0;
 }
 
 
